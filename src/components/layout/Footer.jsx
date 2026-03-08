@@ -140,15 +140,15 @@ const Footer = () => {
             </p>
 
             {/* Age Warning */}
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20">
-              <span className="text-sm font-semibold text-red-400">18+</span>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20">
+              <span className="text-sm font-semibold text-gold">18+</span>
               <span className="text-xs text-gray-400">Adults Only</span>
             </div>
 
             {/* Disclaimer */}
             <p className="text-xs text-gray-600 text-center md:text-right max-w-md">
-              This is a skill-based competition. No purchase necessary. 
-              See Terms & Conditions for free entry method.
+              This is a competition, not a lottery. No purchase necessary. 
+              See Terms & Conditions for free entry method. 10% of every entry supports Yayasan Harapan Bali.
             </p>
           </div>
         </div>

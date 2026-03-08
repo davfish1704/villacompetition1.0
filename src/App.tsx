@@ -16,6 +16,7 @@ import ValueStack from '@/components/sections/ValueStack';
 import Benefits from '@/components/sections/Benefits';
 import RevenueScale from '@/components/sections/RevenueScale';
 import GallerySection from '@/components/sections/GallerySection';
+import VideoTour from '@/components/sections/VideoTour';
 import Location from '@/components/sections/Location';
 import Trust from '@/components/sections/Trust';
 import LegalCompliance from '@/components/sections/LegalCompliance';
@@ -24,6 +25,8 @@ import Timeline from '@/components/sections/Timeline';
 import OddsCalculator from '@/components/sections/OddsCalculator';
 import Winners from '@/components/sections/Winners';
 import FAQ from '@/components/sections/FAQ';
+import SocialProof from '@/components/sections/SocialProof';
+import PostalEntry from '@/components/sections/PostalEntry';
 import FinalCTA from '@/components/sections/FinalCTA';
 
 function App() {
@@ -45,18 +48,21 @@ function App() {
         {/* Main Content */}
         <main>
           <HeroSection />
+          <SocialProof />
           <ValueStack />
           <Benefits />
+          <VideoTour />
           <RevenueScale />
           <GallerySection />
           <Location />
           <Trust />
-          <LegalCompliance />
           <HowItWorks />
           <Timeline />
           <OddsCalculator />
           <Winners />
           <FAQ />
+          <PostalEntry />
+          <LegalCompliance />
           <FinalCTA />
         </main>
         

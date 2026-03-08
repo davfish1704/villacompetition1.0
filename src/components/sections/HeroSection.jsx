@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, Shield, CheckCircle, FileText, Star, Trophy } from 'lucide-react';
+import { ChevronRight, Shield, CheckCircle, FileText, Star, Trophy, Heart } from 'lucide-react';
 import HeroContainer from '@/components/media/HeroContainer';
+import CountdownTimer from '@/components/ui/CountdownTimer';
 import { useApp } from '@/context/AppContext';
 import { villaDetails, companyInfo, testimonials } from '@/data/content';
 
@@ -128,12 +129,36 @@ const HeroSection = () => {
             </span>
           </motion.div>
 
-          {/* Testimonial Card */}
+          {/* Countdown Timer */}
+          <CountdownTimer />
+
+          {/* Charity Badge */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="max-w-xl mx-auto"
+            className="mt-8"
+          >
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gold/10 border border-gold/30">
+              <Heart className="w-5 h-5 text-gold" />
+              <span className="text-sm text-gold">
+                <strong>10%</strong> of every entry supports orphan children in Bali
+              </span>
+              <a 
+                href="/charity" 
+                className="text-sm text-gold underline hover:no-underline ml-2"
+              >
+                Learn More
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Testimonial Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9 }}
+            className="max-w-xl mx-auto mt-12"
           >
             <div className="glass-light rounded-2xl p-6 border border-white/10">
               <div className="flex items-center gap-1 mb-4">

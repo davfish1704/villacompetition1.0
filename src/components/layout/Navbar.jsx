@@ -201,7 +201,7 @@ const Navbar = () => {
                     ))}
                   </div>
                   <p className="mt-4 text-xs text-gray-600">
-                    18+ Only. T&Cs Apply. Gamble Responsibly.
+                    18+ Only. T&Cs Apply. This is a competition, not a lottery.
                   </p>
                 </div>
               </div>

@@ -1,44 +1,43 @@
 // Company Information
 export const companyInfo = {
-  name: "Luck Dip Luxury Items Limited",
-  shortName: "Luck Dip Luxury",
+  name: "Villa Competition",
+  shortName: "Villa Competition",
   established: 2025,
-  currency: "USD",
-  ticketPrice: 30,
-  maxTickets: 150000,
-  currentPrizes: 5,
-  maxPrizes: 8,
-  prizeValue: 10000,
-  villaValue: 1000000,
-  totalPrizesAwarded: 50000,
-  campaignsCompleted: 4,
-  markets: ["UK", "EU", "US", "AUS"],
+  currency: "GBP",
+  ticketPrice: 10,
+  maxTickets: 10000,
+  currentPrizes: 1,
+  maxPrizes: 1,
+  prizeValue: 230000,
+  villaValue: 230000,
+  totalPrizesAwarded: 0,
+  campaignsCompleted: 1,
+  markets: ["UK", "EU"],
   minAge: 18,
 };
 
 // Villa Details
 export const villaDetails = {
-  name: "La Casa De Villa",
+  name: "Luxury Bali Villa",
   location: "Canggu, Bali, Indonesia",
-  value: 1000000,
-  bedrooms: 5,
-  bathrooms: 6,
-  sqft: 11500,
-  sqm: 1070,
-  staffApartment: true,
+  value: 230000,
+  bedrooms: 2,
+  bathrooms: 2,
+  sqft: 1290,
+  sqm: 120,
+  staffApartment: false,
   pool: true,
   garden: true,
-  garage: true,
-  rentalIncome: 8000,
-  description: "A stunning tropical paradise in the heart of Canggu, Bali's most sought-after location. This luxury villa offers the perfect blend of modern comfort and traditional Balinese charm.",
+  garage: false,
+  rentalIncome: 2500,
+  description: "A stunning luxury villa in the heart of Canggu, Bali's most sought-after location. This 2-bedroom property offers the perfect blend of modern comfort and tropical paradise.",
   features: [
-    "5 spacious bedrooms with en-suite bathrooms",
-    "Separate staff apartment",
+    "2 spacious bedrooms with en-suite bathrooms",
+    "European build standard",
     "Private infinity pool",
     "Lush tropical garden",
     "Fully equipped modern kitchen",
     "Open-plan living and dining areas",
-    "Covered parking garage",
     "24/7 security system",
     "High-speed fiber internet",
     "Air conditioning throughout",
@@ -48,36 +47,38 @@ export const villaDetails = {
 // Prize Structure
 export const prizeStructure = {
   current: {
-    count: 5,
-    value: 10000,
-    total: 50000,
+    count: 1,
+    value: 230000,
+    total: 230000,
   },
   extended: {
-    count: 8,
-    value: 10000,
-    total: 80000,
+    count: 1,
+    value: 230000,
+    total: 230000,
   },
-  threshold: 120000,
+  threshold: 10000,
   mainPrize: {
     type: "villa",
-    value: 1000000,
-    description: "La Casa De Villa in Canggu, Bali",
+    value: 230000,
+    description: "Luxury Villa in Canggu, Bali",
   },
 };
 
 // Navigation Links
 export const navigation = {
   main: [
+    { label: "Home", href: "#" },
     { label: "The Villa", href: "#villa" },
     { label: "Gallery", href: "#gallery" },
     { label: "How It Works", href: "#how-it-works" },
     { label: "FAQ", href: "#faq" },
+    { label: "Our Charity", href: "/charity" },
   ],
   legal: [
     { label: "Terms & Conditions", href: "#terms" },
     { label: "Privacy Policy", href: "#privacy" },
     { label: "Cookie Policy", href: "#cookies" },
-    { label: "Responsible Gaming", href: "#responsible" },
+    { label: "Free Postal Entry", href: "#postal-entry" },
   ],
 };
 
@@ -85,43 +86,43 @@ export const navigation = {
 export const skillQuestions = [
   {
     id: 1,
-    question: "How many standard tennis balls would fit in a Boeing 747 airplane?",
-    correctAnswer: 25000000,
-    tolerance: 0.1,
-    unit: "balls",
-    hint: "Think about the approximate volume of a 747 cabin and the size of a tennis ball.",
+    question: "What is 12 + 3?",
+    correctAnswer: 15,
+    tolerance: 0,
+    unit: "",
+    hint: "Simple addition: twelve plus three.",
   },
   {
     id: 2,
-    question: "What is the total length of the Great Wall of China in kilometers?",
-    correctAnswer: 21196,
-    tolerance: 0.1,
-    unit: "km",
-    hint: "It's longer than the distance from New York to Tokyo.",
+    question: "How many days are in a week?",
+    correctAnswer: 7,
+    tolerance: 0,
+    unit: "days",
+    hint: "Count the days from Monday to Sunday.",
   },
   {
     id: 3,
-    question: "How many liters of water are in an Olympic-sized swimming pool?",
-    correctAnswer: 2500000,
-    tolerance: 0.1,
-    unit: "liters",
-    hint: "An Olympic pool is 50m long, 25m wide, and 2m deep.",
+    question: "What is 8 multiplied by 2?",
+    correctAnswer: 16,
+    tolerance: 0,
+    unit: "",
+    hint: "Simple multiplication: eight times two.",
   },
   {
     id: 4,
-    question: "What is the approximate population of Bali, Indonesia?",
-    correctAnswer: 4300000,
-    tolerance: 0.1,
-    unit: "people",
-    hint: "It's more than 3 million but less than 6 million.",
+    question: "How many months are in a year?",
+    correctAnswer: 12,
+    tolerance: 0,
+    unit: "months",
+    hint: "Count from January to December.",
   },
   {
     id: 5,
-    question: "How many square meters is the White House?",
-    correctAnswer: 17000,
-    tolerance: 0.1,
-    unit: "sqm",
-    hint: "It's roughly equivalent to 4-5 average-sized houses.",
+    question: "What is 20 minus 5?",
+    correctAnswer: 15,
+    tolerance: 0,
+    unit: "",
+    hint: "Simple subtraction: twenty minus five.",
   },
 ];
 
@@ -180,16 +181,20 @@ export const timeline = [
 // FAQ Items
 export const faqItems = [
   {
+    question: "Is this competition legal?",
+    answer: "Yes, this is a legal skill-based competition, not a lottery or gambling. Under UK law, competitions that require skill to enter are not classified as gambling. We operate in full compliance with the Gambling Act 2005 and all applicable regulations. The skill question ensures this is a competition, not a lottery.",
+  },
+  {
     question: "Who is eligible to enter?",
-    answer: "You must be 18 years or older and a resident of the UK, EU, US, or Australia. Proof of age and identity may be required for winners. Employees of Luck Dip Luxury Items Limited and their immediate family members are not eligible to participate.",
+    answer: "You must be 18 years or older and a resident of the UK or EU. Proof of age and identity may be required for winners. Employees of Villa Competition and their immediate family members are not eligible to participate.",
   },
   {
     question: "How does the skill question work?",
-    answer: "Before completing your purchase, you'll be presented with an estimation-type skill question (e.g., 'How many tennis balls fit in a Boeing 747?'). Your answer must be within 10% of the correct answer to proceed. This ensures the competition is based on skill rather than chance, making it legally compliant in all our operating markets.",
+    answer: "Before completing your purchase, you'll be presented with a simple skill question (e.g., 'What is 12 + 3?'). You must answer correctly to proceed. This ensures the competition is based on skill rather than chance, making it legally compliant.",
   },
   {
     question: "What happens if I answer the skill question incorrectly?",
-    answer: "You have up to 3 attempts to answer correctly. If you don't answer within the 10% tolerance after 3 tries, you won't be able to complete your purchase. You can try again with a new session after 24 hours.",
+    answer: "You have up to 3 attempts to answer correctly. If you don't answer correctly after 3 tries, you won't be able to complete your purchase. You can try again with a new session after 24 hours.",
   },
   {
     question: "Are there any taxes on winnings?",
@@ -197,39 +202,39 @@ export const faqItems = [
   },
   {
     question: "How do I enter for free?",
-    answer: "No purchase is necessary to enter. You can enter for free by sending a postal entry to: [PLACEHOLDER: Free Entry Department, Luck Dip Luxury Items Limited, 123 Competition Street, London, UK]. Include your full name, email address, phone number, and the answer to the current skill question. Only one free entry per person per passport/ID is allowed. Entries must be received at least 14 days before the draw.",
+    answer: "No purchase is necessary to enter. You can enter for free by sending a postal entry to: Free Entry Department, Villa Competition, 123 Example Street, London, EC1A 1BB, UK. Include your full name, email address, phone number, and the answer to the skill question (What is 12 + 3?). Only one free entry per person per passport/ID is allowed. Entries must be received at least 14 days before the draw.",
   },
   {
     question: "When will the draw take place?",
-    answer: "The draw will take place live once all 150,000 tickets are sold. This ensures maximum excitement and transparency. We'll notify all participants via email with the live stream link at least 48 hours before the draw.",
+    answer: "The draw will take place on April 9, 2026 at 6:00 PM GMT. We'll notify all participants via email with the live stream link at least 48 hours before the draw. The winner will be selected using a certified random number generator witnessed by an independent solicitor.",
   },
   {
-    question: "What happens if not all tickets are sold?",
-    answer: "If ticket sales are slower than expected, we reserve the right to extend the campaign or adjust the prize structure. However, the main villa prize will always be awarded. Any changes will be communicated to all participants with at least 30 days notice.",
+    question: "What happens if not enough tickets are sold?",
+    answer: "If the minimum number of entries is not reached by the closing date, the winner will receive 70% of the total entry receipts as a cash alternative. This is clearly stated in our terms and conditions, ensuring there's always a winner.",
   },
   {
     question: "Can I choose cash instead of the villa?",
-    answer: "Yes! The main winner can choose to receive a cash alternative of $800,000 instead of the villa. This option must be selected within 14 days of being notified. Cash prizes for secondary winners are fixed at $10,000 each.",
+    answer: "Yes! The winner can choose to receive a cash alternative of £160,000 instead of the villa. This option must be selected within 14 days of being notified.",
   },
   {
     question: "How are the winners selected?",
-    answer: "Winners are selected using a certified random number generator during a live-streamed event. An independent adjudicator oversees the process to ensure complete fairness and transparency. All ticket numbers are entered into the draw system.",
-  },
-  {
-    question: "What is the prize scaling feature?",
-    answer: "We start with 5 guaranteed cash prizes of $10,000 each. If we reach 120,000 tickets sold, we unlock 3 additional cash prizes, bringing the total to 8 prizes worth $80,000! This gives everyone more chances to win.",
+    answer: "The winner is selected using a certified random number generator during a live-streamed event. An independent solicitor oversees the process to ensure complete fairness and transparency. All ticket numbers are entered into the draw system.",
   },
   {
     question: "Is this a lottery or gambling?",
-    answer: "No, this is a skill-based competition, not a lottery or gambling. The requirement to answer a skill question correctly before purchasing makes this a game of skill, which is legally distinct from gambling in all our operating markets. We're fully compliant with UK, EU, US, and Australian regulations.",
+    answer: "No, this is a skill-based competition, not a lottery or gambling. The requirement to answer a skill question correctly before purchasing makes this a game of skill, which is legally distinct from gambling. We're fully compliant with UK and EU regulations.",
   },
   {
     question: "How do I know this is legitimate?",
-    answer: "Luck Dip Luxury Items Limited is a registered company established in 2025. We've successfully completed 4 previous campaigns with $50,000 in prizes awarded. Our draws are conducted by independent adjudicators and live-streamed for transparency. Read our Trustpilot reviews from previous winners!",
+    answer: "Villa Competition is a registered company. Our draws are conducted by independent solicitors and live-streamed for transparency. 10% of every entry goes to our charity partner, Yayasan Harapan Bali, supporting orphan children in Indonesia.",
   },
   {
     question: "What are my odds of winning?",
-    answer: "Your odds depend on how many tickets you purchase. With 150,000 tickets total and 5-8 prizes available, the base odds are approximately 1 in 18,750 to 1 in 30,000 per ticket. Buying multiple tickets increases your chances proportionally. Use our odds calculator to see your exact chances!",
+    answer: "Your odds depend on how many tickets you purchase. With 10,000 tickets total and 1 villa prize, the base odds are 1 in 10,000 per ticket. Buying multiple tickets increases your chances proportionally. Use our odds calculator to see your exact chances!",
+  },
+  {
+    question: "Who is the charity partner?",
+    answer: "We partner with Yayasan Harapan Bali, an Indonesian charity supporting orphan children across Bali. 10% of every entry goes directly to support their work providing education, shelter, and care for vulnerable children. Visit our charity page to learn more.",
   },
 ];
 
@@ -406,10 +411,42 @@ export const legalCompliance = {
   responsibleGaming: "We promote responsible participation. Set limits, take breaks, and never spend more than you can afford to lose. Contact our support team if you need assistance.",
 };
 
+// Ticket Packages
+export const ticketPackages = [
+  {
+    id: 1,
+    entries: 1,
+    price: 10,
+    popular: false,
+    savings: 0,
+  },
+  {
+    id: 2,
+    entries: 5,
+    price: 40,
+    popular: true,
+    savings: 10,
+  },
+  {
+    id: 3,
+    entries: 10,
+    price: 75,
+    popular: false,
+    savings: 25,
+  },
+];
+
+// Draw Date
+export const drawDate = {
+  date: "2026-04-09",
+  time: "18:00:00",
+  timezone: "GMT",
+};
+
 // SEO Meta Data
 export const seo = {
-  title: "Win a $1,000,000 Villa in Bali | Luck Dip Luxury",
-  description: "Enter to win La Casa De Villa, a $1M luxury property in Canggu, Bali. 5 bedrooms, private pool, 11,500 sq ft. Plus 5-8 cash prizes of $10,000 each. Tickets $30.",
-  keywords: "win villa bali, luxury competition, canggu villa, win house, skill competition, bali property, win cash prize",
+  title: "Win a Luxury Bali Villa | Enter the Competition Today",
+  description: "Enter for a chance to win a stunning luxury villa in Bali. Supporting orphan children in Indonesia. From £10 per entry. Legal UK skill-based competition.",
+  keywords: "win villa bali, luxury competition, canggu villa, win house, skill competition, bali property, competition not lottery",
   ogImage: "/media/hero/slide-1.jpg",
 };

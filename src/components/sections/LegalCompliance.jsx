@@ -167,7 +167,7 @@ const LegalCompliance = () => {
             </motion.div>
           </div>
 
-          {/* Bottom: Responsible Gaming */}
+          {/* Bottom: Fair Play */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -179,14 +179,11 @@ const LegalCompliance = () => {
                 <Heart className="w-6 h-6 text-gold" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">Responsible Participation</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Fair Play Guaranteed</h3>
                 <p className="text-gray-400">
-                  {legalCompliance.responsibleGaming} If you feel you may have a 
-                  problem with gambling, please contact{' '}
-                  <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
-                    BeGambleAware
-                  </a>{' '}
-                  or your local support organization.
+                  We are committed to running a fair and transparent competition. 
+                  All draws are conducted by independent solicitors and live-streamed. 
+                  10% of every entry supports Yayasan Harapan Bali, helping orphan children in Indonesia.
                 </p>
               </div>
             </div>
