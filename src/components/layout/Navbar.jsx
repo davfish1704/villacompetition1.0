@@ -43,9 +43,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full gold-gradient flex items-center justify-center">
-                <span className="text-lg font-bold text-dark">LD</span>
-              </div>
+              <img 
+                src="/favicon.png" 
+                alt="Luck Dip Luxury Logo" 
+                className="h-10 w-10 rounded-full object-cover"
+              />
               <span className="hidden sm:block font-display font-semibold text-white text-lg">
                 Luck Dip Luxury
               </span>
@@ -78,13 +80,15 @@ const Navbar = () => {
               </div>
 
               {/* CTA Button */}
-              <button
-                onClick={openSkillModal}
+              <a
+                href="https://buy.stripe.com/cNi7sL9xtfGR5X532Y2Fa05"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden sm:flex items-center gap-2 px-5 py-2.5 gold-gradient rounded-full font-semibold text-dark text-sm hover:shadow-gold transition-shadow"
               >
                 Enter Now
                 <ChevronRight className="w-4 h-4" />
-              </button>
+              </a>
 
               {/* Cart Indicator */}
               {cartTickets > 0 && (
@@ -173,15 +177,15 @@ const Navbar = () => {
                 </div>
 
                 {/* CTA */}
-                <button
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    openSkillModal();
-                  }}
-                  className="w-full mt-6 py-4 gold-gradient rounded-xl font-semibold text-dark"
+                <a
+                  href="https://buy.stripe.com/cNi7sL9xtfGR5X532Y2Fa05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full mt-6 py-4 gold-gradient rounded-xl font-semibold text-dark block text-center"
                 >
                   Enter Now
-                </button>
+                </a>
 
                 {/* Footer */}
                 <div className="mt-8 pt-6 border-t border-dark-100">

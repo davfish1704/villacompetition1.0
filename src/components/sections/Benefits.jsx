@@ -84,13 +84,15 @@ const Benefits = () => {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <button
-              onClick={openSkillModal}
+            <a
+              href="https://buy.stripe.com/cNi7sL9xtfGR5X532Y2Fa05"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 btn-primary rounded-full"
             >
               Get Your Tickets
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

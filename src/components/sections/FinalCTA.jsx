@@ -104,13 +104,15 @@ const FinalCTA = () => {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <button
-              onClick={openSkillModal}
-              className="btn-primary rounded-full text-lg px-10 py-5"
+            <a
+              href="https://buy.stripe.com/cNi7sL9xtfGR5X532Y2Fa05"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary rounded-full text-lg px-10 py-5 inline-flex items-center"
             >
               Enter Now
               <ArrowRight className="w-5 h-5 ml-2" />
-            </button>
+            </a>
           </motion.div>
 
           {/* Trust Note */}

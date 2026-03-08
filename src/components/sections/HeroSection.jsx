@@ -70,12 +70,14 @@ const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <button
-              onClick={openSkillModal}
-              className="btn-primary rounded-full text-lg px-10 py-5"
+            <a
+              href="https://buy.stripe.com/cNi7sL9xtfGR5X532Y2Fa05"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary rounded-full text-lg px-10 py-5 inline-block"
             >
               Enter Now
-            </button>
+            </a>
             <button
               onClick={() => scrollToSection('#how-it-works')}
               className="btn-secondary rounded-full text-lg px-10 py-5"
