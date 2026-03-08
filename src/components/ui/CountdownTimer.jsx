@@ -11,8 +11,10 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    // Set draw date to April 9, 2026 at 18:00:00
-    const drawDate = new Date('2026-04-09T18:00:00');
+    // Set draw date to 90 days from now
+    const drawDate = new Date();
+    drawDate.setDate(drawDate.getDate() + 90);
+    drawDate.setHours(18, 0, 0, 0);
 
     const calculateTimeLeft = () => {
       const now = new Date();
@@ -80,7 +82,7 @@ const CountdownTimer = () => {
 
         {/* Draw Date */}
         <p className="text-center text-sm text-gray-500 mt-4">
-          Live Draw: April 9, 2026 at 6:00 PM GMT
+          Live Draw in 90 Days • Winner announced on live stream
         </p>
       </div>
     </motion.div>

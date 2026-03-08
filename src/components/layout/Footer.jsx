@@ -15,18 +15,18 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center">
-                <span className="text-xl font-bold text-dark">LD</span>
+                <span className="text-xl font-bold text-dark">VC</span>
               </div>
               <div>
                 <h3 className="font-display font-semibold text-white text-lg">
-                  Luck Dip Luxury
+                  Villa Competition
                 </h3>
-                <p className="text-xs text-gray-500">Items Limited</p>
+                <p className="text-xs text-gray-500">Win Your Dream Villa</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-6">
-              Win life-changing luxury prizes through skill-based competitions. 
-              Established {companyInfo.established} with ${(companyInfo.totalPrizesAwarded / 1000).toFixed(0)}k+ in prizes awarded.
+              Win a $1M luxury villa in Bali through our skill-based competition. 
+              Supporting charity with 10% of every entry.
             </p>
             
             {/* Contact Info */}

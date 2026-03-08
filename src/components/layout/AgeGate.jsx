@@ -36,10 +36,10 @@ const AgeGate = () => {
             {/* Logo */}
             <div className="text-center mb-8">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full gold-gradient mb-4">
-                <span className="text-3xl font-bold text-dark">LD</span>
+                <span className="text-3xl font-bold text-dark">VC</span>
               </div>
               <h1 className="text-2xl font-bold text-white font-display">
-                Luck Dip Luxury
+                Villa Competition
               </h1>
               <p className="text-gray-400 mt-1">Age Verification Required</p>
             </div>
@@ -162,7 +162,7 @@ const AgeGate = () => {
 
             {/* Footer */}
             <p className="text-center text-xs text-gray-500 mt-6">
-              Luck Dip Luxury Items Limited © 2025. All rights reserved.
+              Villa Competition © 2025. All rights reserved.
             </p>
           </motion.div>
         </motion.div>

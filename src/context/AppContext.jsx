@@ -28,9 +28,9 @@ export const AppProvider = ({ children }) => {
   const [cookieConsent, setCookieConsent] = useState(null);
   const [showCookieConsent, setShowCookieConsent] = useState(false);
   
-  // Ticket counter state
-  const [ticketsSold, setTicketsSold] = useState(45237); // Starting simulated number
-  const [isLive, setIsLive] = useState(true);
+  // Ticket counter state - Static until launch
+  const [ticketsSold, setTicketsSold] = useState(0); // Will start from 0 at launch
+  const [isLive, setIsLive] = useState(false); // Live counting disabled until launch
   
   // Cart state
   const [cartTickets, setCartTickets] = useState(0);
@@ -75,7 +75,9 @@ export const AppProvider = ({ children }) => {
     checkStorage();
   }, []);
 
-  // Simulate live ticket updates
+  // Live ticket updates - DISABLED until official launch
+  // Uncomment below to enable live counting when competition goes live
+  /*
   useEffect(() => {
     if (!isLive) return;
     
@@ -96,6 +98,7 @@ export const AppProvider = ({ children }) => {
     
     return () => clearInterval(interval);
   }, [isLive, currentPrizeCount]);
+  */
 
   // Age verification handlers
   const verifyAge = useCallback(() => {

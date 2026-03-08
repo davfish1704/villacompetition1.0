@@ -45,11 +45,11 @@ const Navbar = () => {
             <a href="#" className="flex items-center gap-3">
               <img 
                 src="/favicon.png" 
-                alt="Luck Dip Luxury Logo" 
+                alt="Villa Competition Logo" 
                 className="h-10 w-10 rounded-full object-cover"
               />
               <span className="hidden sm:block font-display font-semibold text-white text-lg">
-                Luck Dip Luxury
+                Villa Competition
               </span>
             </a>
 
